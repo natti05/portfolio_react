@@ -28,7 +28,7 @@ const LandingSection = () => {
       type:"hireMe",
       comment:"",
     },
-    onSubmit: (values) => {submit(values)},
+    onSubmit: (values) => {submit('http:exemple.com/contactme', values)},
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
